@@ -1,0 +1,41 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book-card {
+    flex: 0 0 calc(33.333% - 20px); /* 3 cards per row with space */
+    margin: 10px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.available {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.borrowed {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.alert {
+    margin-top: 10px;
+}
